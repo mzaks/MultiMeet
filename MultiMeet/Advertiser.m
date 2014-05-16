@@ -1,4 +1,3 @@
-#import <MultipeerConnectivity/MultipeerConnectivity.h>
 #import "Advertiser.h"
 
 #define FOOD_CHOICE @"foodChoice"
@@ -33,7 +32,7 @@
 }
 
 - (NSString *)serviceName {
-    return [NSString stringWithFormat:@"MultiMeet_%@", _foodChoice];
+    return [NSString stringWithFormat:@"MultiMeet%@", _foodChoice];
 }
 
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL accept, MCSession *session))invitationHandler {
@@ -56,7 +55,7 @@
 #pragma SESSION API
 
 - (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state {
-    NSLog(@"peer %@ connected with state: %i", peerID, state);
+    NSLog(@"peer %@ connected with state: %li", peerID, state);
 }
 
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID {
