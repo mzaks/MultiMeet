@@ -6,6 +6,8 @@
     MCPeerID *_localPeerID;
     MCSession *_session;
     NSString *_foodChoice;
+    MCNearbyServiceAdvertiser *_advertiser;
+    MCNearbyServiceBrowser *_browser;
 }
 
 
@@ -19,16 +21,15 @@
 
     _session.delegate = self;
 
-    MCNearbyServiceAdvertiser *advertiser =
-        [[MCNearbyServiceAdvertiser alloc] initWithPeer:_localPeerID
+    _advertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:_localPeerID
                                           discoveryInfo:nil
                                             serviceType:[self serviceName]];
-    advertiser.delegate = self;
-    [advertiser startAdvertisingPeer];
+    _advertiser.delegate = self;
+    [_advertiser startAdvertisingPeer];
 
-    MCNearbyServiceBrowser *browser = [[MCNearbyServiceBrowser alloc] initWithPeer:_localPeerID serviceType:[self serviceName]];
-    browser.delegate = self;
-    [browser startBrowsingForPeers];
+    _browser = [[MCNearbyServiceBrowser alloc] initWithPeer:_localPeerID serviceType:[self serviceName]];
+    _browser.delegate = self;
+    [_browser startBrowsingForPeers];
 }
 
 - (NSString *)serviceName {

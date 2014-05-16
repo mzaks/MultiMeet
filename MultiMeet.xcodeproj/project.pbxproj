@@ -24,9 +24,9 @@
 		0BAB396119260B4700E1D5CB /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB396019260B4700E1D5CB /* MultipeerConnectivity.framework */; };
 		0BAB396319260B5C00E1D5CB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB396219260B5C00E1D5CB /* Social.framework */; };
 		10D02323192621DD00DE66D1 /* default_profile_picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D02322192621DD00DE66D1 /* default_profile_picture@2x.png */; };
-		638F0438FD5D9779D2E73559 /* Advertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 638F0FAE3D7CD7E640E1DC40 /* Advertiser.m */; };
 		1F09355419261222001666BF /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F09355319261222001666BF /* Group.m */; };
 		1F093557192612EC001666BF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F093556192612EC001666BF /* User.m */; };
+		638F0438FD5D9779D2E73559 /* Advertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 638F0FAE3D7CD7E640E1DC40 /* Advertiser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
