@@ -44,6 +44,10 @@
     return [NSString stringWithFormat:@"multimeet%@", _foodChoice];
 }
 
+- (NSInteger) numberOfConnectedPeers {
+  return [[_session connectedPeers] count];
+}
+
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL accept, MCSession *session))invitationHandler {
 
     invitationHandler(YES, _session);
@@ -65,6 +69,8 @@
 
 - (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state {
     NSLog(@"peer %@ connected with state: %li", peerID, state);
+  
+  [[NSNotificationCenter defaultCenter] postNotificationName:kMultiMeetCount object:self];
 }
 
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID {

@@ -12,6 +12,7 @@
 
 #import "ViewController.h"
 #import "FoodDataSource.h"
+#import "Advertiser.h"
 
 @interface ViewController ()
 
@@ -29,6 +30,8 @@
   
   _foodDataSource = [[FoodDataSource alloc] initWithTableView:self.foodChoiceTableView];
   
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateCount) name:kMultiMeetCount object:nil];
   
 }
 
@@ -127,6 +130,14 @@
              });
          }
      }];
+}
+
+- (void) updateCount
+{
+  self.connectedCountLabel.text = [NSString stringWithFormat:@"%li", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]];
+  
+  NSLog(@"%li", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]);
+  
 }
 
 @end
