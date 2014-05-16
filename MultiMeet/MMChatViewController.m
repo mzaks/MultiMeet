@@ -30,7 +30,7 @@ static NSString *const MMChatViewControllerMessageCellIdentifier = @"messageCell
 
     self.messages = [[NSMutableArray alloc] init];
 
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onAddMessage:)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onAddMessage:)];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMessageNotification:) name:kMultiMeetMessage object:nil];
 
@@ -40,9 +40,12 @@ static NSString *const MMChatViewControllerMessageCellIdentifier = @"messageCell
 - (void)onMessageNotification:(NSNotification *)notification
 {
     
-    NSString *message = notification.userInfo[@"message"];
+    __block NSString *message = notification.userInfo[@"message"];
     
-    [self addMessage:message];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self addMessage:message];
+    });
+    
 }
 
 - (void)onAddMessage:(id)onAddMessage

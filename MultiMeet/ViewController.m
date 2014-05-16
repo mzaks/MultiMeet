@@ -220,7 +220,7 @@
     if (self.presentedViewController) return;
     
     MMChatViewController *chatViewController = [[MMChatViewController alloc] init];
-    chatViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneChatting:)];
+    chatViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneChatting:)];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:chatViewController];
     
