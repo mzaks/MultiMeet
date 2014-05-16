@@ -33,7 +33,7 @@
 }
 
 - (NSString *)serviceName {
-    return [NSString stringWithFormat:@"MultiMeet%@", _foodChoice];
+    return [NSString stringWithFormat:@"multimeet%@", _foodChoice];
 }
 
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL accept, MCSession *session))invitationHandler {

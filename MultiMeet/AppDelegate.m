@@ -14,7 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [[Advertiser new] startAdvertising:@"Piza"];
+    [[Advertiser new] startAdvertising:@"piza"];
 
     return YES;
 }
