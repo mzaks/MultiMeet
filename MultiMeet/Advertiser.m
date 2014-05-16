@@ -66,7 +66,6 @@
 
 
 #pragma SESSION API
-
 - (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state {
     NSLog(@"peer %@ connected with state: %li", peerID, state);
   

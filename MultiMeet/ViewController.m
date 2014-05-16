@@ -137,7 +137,7 @@
   dispatch_async(dispatch_get_main_queue(), ^{
     self.connectedCountLabel.text = [NSString stringWithFormat:@"%li", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]];
   
-    NSLog(@"%li", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]);
+    NSLog(@"+%li", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]);
   });
 
 }
