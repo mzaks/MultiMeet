@@ -78,13 +78,18 @@
 
     if(error){
         NSLog(@"Could not send chat message: %@", error);
+    } else {
+      [[NSNotificationCenter defaultCenter] postNotificationName:kMultiMeetMessage object:self userInfo:@{
+                                                                                                          @"message" : message,
+                                                                                                          @"sender" : _localPeerID.displayName
+                                                                                                          }];
+
     }
 }
 
 - (void)browser:(MCNearbyServiceBrowser *)browser foundPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info {
 
     [browser invitePeer:peerID toSession:_session withContext:nil timeout:300];
-
 }
 
 - (void)browser:(MCNearbyServiceBrowser *)browser lostPeer:(MCPeerID *)peerID {

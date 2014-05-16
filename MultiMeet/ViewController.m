@@ -22,6 +22,7 @@
 @implementation ViewController {
   FoodDataSource* _foodDataSource;
   NSTimer *_timer;
+  NSTimer *_updateTimer;
   CGFloat _currentProgress;
 }
 
@@ -38,6 +39,9 @@
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showChatView) name:kMultiMeetStart object:nil];
 
     _currentProgress = 0;
+  
+  _updateTimer = [NSTimer scheduledTimerWithTimeInterval:.2 target:self selector:@selector(updateCount) userInfo:nil repeats:YES];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -181,6 +185,7 @@
             if(!_timer){
                 _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showProgress) userInfo:nil repeats:YES];
                 [_timer fire];
+              
             }
         }
     });
@@ -191,10 +196,10 @@
   _currentProgress++;
     if(_currentProgress>=31){
         [self startChating];
-    } else {
-      [self updateProgressBar];
     }
-}
+    [self updateProgressBar];
+
+  }
 
 
 - (void) updateProgressBar {

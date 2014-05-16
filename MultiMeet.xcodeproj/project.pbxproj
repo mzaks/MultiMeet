@@ -279,8 +279,6 @@
 			mainGroup = 0BAB391F19260A1700E1D5CB;
 			productRefGroup = 0BAB392919260A1700E1D5CB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				0BAB392719260A1700E1D5CB /* MultiMeet */,
