@@ -114,7 +114,7 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwz-CN-1RZ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwz-CN-1RZ">
                                 <rect key="frame" x="146" y="476" width="29" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
@@ -133,6 +133,7 @@
                         <outlet property="connectedCountLabel" destination="fwz-CN-1RZ" id="7JW-00-ykX"/>
                         <outlet property="foodChoiceTableView" destination="gcB-vE-cUu" id="7X1-hp-2I3"/>
                         <outlet property="loadingIndicator" destination="YXJ-UL-b5l" id="QZf-PQ-yR6"/>
+                        <outlet property="progressIndicator" destination="gPT-Oq-l7N" id="m9H-Vs-6Se"/>
                         <outlet property="userNameLabel" destination="dLt-Wq-lVJ" id="hvv-c6-5aO"/>
                         <outlet property="userPicture" destination="Xqj-pB-SlH" id="3Iy-Qe-NIt"/>
                     </connections>

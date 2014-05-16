@@ -20,6 +20,8 @@
 
 @implementation ViewController {
   FoodDataSource* _foodDataSource;
+  NSTimer *_timer;
+  CGFloat _currentProgress;
 }
 
 - (void)viewDidLoad
@@ -32,7 +34,9 @@
   
   
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateCount) name:kMultiMeetCount object:nil];
-  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showChatView) name:kMultiMeetStart object:nil];
+
+    _currentProgress = 0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,6 +73,8 @@
 - (void)createUserWithName:(NSString *)name pictureSource:(NSString *)pictureSource
 {
     NSLog(@"Creating user with name %@, avatar url %@", name, pictureSource);
+
+    [Advertiser sharedAdvertiser].peerName = name;
     
     if (pictureSource == nil)
     {
@@ -134,11 +140,54 @@
 
 - (void) updateCount
 {
-  dispatch_async(dispatch_get_main_queue(), ^{
-    self.connectedCountLabel.text = [NSString stringWithFormat:@"%li", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]];
-  
-    NSLog(@"+%li", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]);
-  });
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+
+        NSInteger connectedPeers = [[Advertiser sharedAdvertiser] numberOfConnectedPeers];
+        
+        self.connectedCountLabel.text = [NSString stringWithFormat:@"+%li", connectedPeers];
+        
+        if (connectedPeers == 0) {
+            [_timer invalidate];
+            _timer = nil;
+            _currentProgress = 0;
+        } else {
+            if(!_timer){
+                _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showProgress) userInfo:nil repeats:YES];
+                [_timer fire];
+            }
+        }
+    });
+
+}
+
+- (void)showProgress {
+  _currentProgress++;
+    if(_currentProgress>=30){
+        [self startChating];
+    } else {
+
+        CGFloat width = (320.0f / 30.0f) * _currentProgress;
+        
+        [UIView animateWithDuration:1 animations:^{
+            _progressIndicator.frame = CGRectMake(_progressIndicator.frame.origin.x, _progressIndicator.frame.origin.y, width, _progressIndicator.frame.size.height);
+        }];
+        
+
+    }
+}
+
+- (void)startChating {
+    [_timer invalidate];
+    _timer = nil;
+    _currentProgress = 0;
+
+    [[Advertiser sharedAdvertiser] startChatting];
+
+    [self showChatView];
+}
+
+- (void)showChatView {
 
 }
 

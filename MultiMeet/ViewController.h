@@ -16,5 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *connectedCountLabel;
 @property (weak, nonatomic) IBOutlet UITableView *foodChoiceTableView;
+@property (weak, nonatomic) IBOutlet UIImageView *progressIndicator;
 
 @end
