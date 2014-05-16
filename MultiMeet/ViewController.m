@@ -176,6 +176,7 @@
             [_timer invalidate];
             _timer = nil;
             _currentProgress = 0;
+            [self updateProgressBar];
         } else {
             if(!_timer){
                 _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showProgress) userInfo:nil repeats:YES];
@@ -191,15 +192,17 @@
     if(_currentProgress>=31){
         [self startChating];
     } else {
-
-        CGFloat width = (320.0f / 30.0f) * _currentProgress;
-        
-        [UIView animateWithDuration:1 animations:^{
-            _progressIndicator.frame = CGRectMake(_progressIndicator.frame.origin.x, _progressIndicator.frame.origin.y, width, _progressIndicator.frame.size.height);
-        }];
-        
-
+      [self updateProgressBar];
     }
+}
+
+
+- (void) updateProgressBar {
+  CGFloat width = (320.0f / 30.0f) * _currentProgress;
+  
+  [UIView animateWithDuration:1 animations:^{
+    _progressIndicator.frame = CGRectMake(_progressIndicator.frame.origin.x, _progressIndicator.frame.origin.y, width, _progressIndicator.frame.size.height);
+  }];
 }
 
 - (void)startChating {
