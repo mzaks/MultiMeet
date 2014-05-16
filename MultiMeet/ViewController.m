@@ -171,7 +171,7 @@
 
         NSInteger connectedPeers = [[Advertiser sharedAdvertiser] numberOfConnectedPeers];
         
-        self.connectedCountLabel.text = [NSString stringWithFormat:@"+%li", connectedPeers];
+        self.connectedCountLabel.text = [NSString stringWithFormat:@"+%@", @(connectedPeers)];
         
         if (connectedPeers == 0) {
             [_timer invalidate];
