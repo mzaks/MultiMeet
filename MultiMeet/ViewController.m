@@ -13,6 +13,7 @@
 #import "ViewController.h"
 #import "FoodDataSource.h"
 #import "Advertiser.h"
+#import "MMChatViewController.h"
 
 @interface ViewController ()
 
@@ -212,7 +213,21 @@
 }
 
 - (void)showChatView {
+    
+    if (self.presentedViewController) return;
+    
+    MMChatViewController *chatViewController = [[MMChatViewController alloc] init];
+    chatViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneChatting:)];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:chatViewController];
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
 
+}
+
+- (void)onDoneChatting:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
