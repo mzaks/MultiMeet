@@ -120,12 +120,18 @@ static NSString *const MMChatViewControllerMessageCellIdentifier = @"messageCell
 
     [self registerForKeyboardNotifications];
 
+    [self addMessage:[NSString stringWithFormat:@"Entering chat with %i participants", [[Advertiser sharedAdvertiser] numberOfConnectedPeers]]];
+
     [_textField becomeFirstResponder];
+
+    [[Advertiser sharedAdvertiser] sendMessage:@"I am in!"];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+
+    [[Advertiser sharedAdvertiser] sendMessage:@"I am out!"];
 
     [self unregisterFromKeyboardNotifications];
 }
