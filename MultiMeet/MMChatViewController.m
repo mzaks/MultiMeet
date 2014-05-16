@@ -40,7 +40,7 @@ static NSString *const MMChatViewControllerMessageCellIdentifier = @"messageCell
 - (void)onMessageNotification:(NSNotification *)notification
 {
     
-    __block NSString *message = notification.userInfo[@"message"];
+    __block NSString *message = [NSString stringWithFormat:@"%@: %@", notification.userInfo[@"sender"], notification.userInfo[@"message"]];
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self addMessage:message];

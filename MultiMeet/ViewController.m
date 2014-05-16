@@ -194,7 +194,7 @@
 
 - (void)showProgress {
   _currentProgress++;
-    if(_currentProgress>=31){
+    if(_currentProgress>=3){
         [self startChating];
     }
     [self updateProgressBar];
@@ -203,7 +203,7 @@
 
 
 - (void) updateProgressBar {
-  CGFloat width = (320.0f / 30.0f) * _currentProgress;
+  CGFloat width = (320.0f / 3.0f) * _currentProgress;
   
   [UIView animateWithDuration:1 animations:^{
     _progressIndicator.frame = CGRectMake(_progressIndicator.frame.origin.x, _progressIndicator.frame.origin.y, width, _progressIndicator.frame.size.height);
@@ -226,7 +226,8 @@
     
     MMChatViewController *chatViewController = [[MMChatViewController alloc] init];
     chatViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneChatting:)];
-    chatViewController.title = [_foodDataSource nameAtPath:_foodChoiceTableView.indexPathForSelectedRow];
+    NSString *title = [_foodDataSource nameAtPath:_foodChoiceTableView.indexPathForSelectedRow];
+    chatViewController.title = title;
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:chatViewController];
     
