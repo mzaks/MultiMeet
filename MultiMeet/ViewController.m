@@ -226,6 +226,7 @@
     
     MMChatViewController *chatViewController = [[MMChatViewController alloc] init];
     chatViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(onDoneChatting:)];
+    chatViewController.title = [_foodDataSource nameAtPath:_foodChoiceTableView.indexPathForSelectedRow];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:chatViewController];
     

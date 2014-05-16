@@ -9,7 +9,9 @@
 #import "FoodDataSource.h"
 #import "Advertiser.h"
 
-@implementation FoodDataSource
+@implementation FoodDataSource {
+    NSArray *food;
+}
 
 - (id) initWithTableView:(UITableView*) tableView {
   self = [super init];
@@ -18,6 +20,7 @@
     self.tableView = tableView;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    food = @[@"pizza", @"chinese", @"fastfood", @"doner"];
   }
   return self;
 }
@@ -33,21 +36,7 @@
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   UITableViewCell* cell;
   
-  switch (indexPath.row) {
-    case 0:
-      cell = [self.tableView dequeueReusableCellWithIdentifier:@"pizza"];
-      break;
-    case 1:
-      cell = [self.tableView dequeueReusableCellWithIdentifier:@"chinese"];
-      break;
-    case 2:
-      cell = [self.tableView dequeueReusableCellWithIdentifier:@"fastfood"];
-      break;
-    case 3:
-      cell = [self.tableView dequeueReusableCellWithIdentifier:@"doner"];
-    default:
-      break;
-  }
+  cell = [self.tableView dequeueReusableCellWithIdentifier:food[indexPath.row]];
   
   return cell;
 }
@@ -55,7 +44,9 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [[Advertiser sharedAdvertiser] startAdvertising:[NSString stringWithFormat:@"%li", indexPath.row]];
 
-  
 }
 
+- (NSString *)nameAtPath:(NSIndexPath *)path {
+    return food[path.row];
+}
 @end

@@ -51,7 +51,9 @@
 
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL accept, MCSession *session))invitationHandler {
 
-    invitationHandler(!_friends || [_friends containsObject:peerID], _session);
+    BOOL isFriend = !_friends || [_friends containsObject:peerID];
+    
+    invitationHandler(YES, _session);
 
 }
 

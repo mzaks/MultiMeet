@@ -14,4 +14,6 @@
 
 @property (nonatomic, weak) UITableView* tableView;
 
+- (NSString *)nameAtPath:(NSIndexPath *)path;
+
 @end
