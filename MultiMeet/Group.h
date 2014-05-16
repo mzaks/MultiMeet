@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+@import MultipeerConnectivity;
 
 @interface Group : NSObject
 
-@property(nonatomic) NSInteger numberOfPeople;
+@property(nonatomic) MCSession *session;
 
+@property(nonatomic) NSInteger numberOfPeople;
 @property(nonatomic) NSSet *usersInGroup;
 
 @end
