@@ -23,6 +23,7 @@
 		0BAB395719260A1700E1D5CB /* MultiMeetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB395619260A1700E1D5CB /* MultiMeetTests.m */; };
 		0BAB396119260B4700E1D5CB /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB396019260B4700E1D5CB /* MultipeerConnectivity.framework */; };
 		0BAB396319260B5C00E1D5CB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB396219260B5C00E1D5CB /* Social.framework */; };
+		638F0438FD5D9779D2E73559 /* Advertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 638F0FAE3D7CD7E640E1DC40 /* Advertiser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		0BAB395619260A1700E1D5CB /* MultiMeetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiMeetTests.m; sourceTree = "<group>"; };
 		0BAB396019260B4700E1D5CB /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		0BAB396219260B5C00E1D5CB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		638F0745BB13C96E5E849D00 /* Advertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Advertiser.h; sourceTree = "<group>"; };
+		638F0FAE3D7CD7E640E1DC40 /* Advertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Advertiser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				0BAB394119260A1700E1D5CB /* ViewController.m */,
 				0BAB394319260A1700E1D5CB /* Images.xcassets */,
 				0BAB393219260A1700E1D5CB /* Supporting Files */,
+				638F0FAE3D7CD7E640E1DC40 /* Advertiser.m */,
+				638F0745BB13C96E5E849D00 /* Advertiser.h */,
 			);
 			path = MultiMeet;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				0BAB394219260A1700E1D5CB /* ViewController.m in Sources */,
 				0BAB393C19260A1700E1D5CB /* AppDelegate.m in Sources */,
 				0BAB393819260A1700E1D5CB /* main.m in Sources */,
+				638F0438FD5D9779D2E73559 /* Advertiser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "Advertiser.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[Advertiser new] startAdvertising:@"Piza"];
+
     return YES;
 }
 							
