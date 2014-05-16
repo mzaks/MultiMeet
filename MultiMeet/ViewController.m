@@ -22,7 +22,6 @@
 @implementation ViewController {
   FoodDataSource* _foodDataSource;
   NSTimer *_timer;
-  NSTimer *_updateTimer;
   CGFloat _currentProgress;
 }
 
@@ -40,8 +39,6 @@
 
     _currentProgress = 0;
   
-  _updateTimer = [NSTimer scheduledTimerWithTimeInterval:.2 target:self selector:@selector(updateCount) userInfo:nil repeats:YES];
-
 }
 
 - (void)didReceiveMemoryWarning
