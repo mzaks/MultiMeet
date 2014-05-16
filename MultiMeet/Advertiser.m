@@ -10,7 +10,14 @@
     MCNearbyServiceBrowser *_browser;
 }
 
-
++ (id) sharedAdvertiser {
+  static Advertiser* advertiser;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    advertiser = [[Advertiser alloc] init];
+  });
+  return advertiser;
+}
 
 -(void)startAdvertising:(NSString *)foodChoice{
     _foodChoice = foodChoice;

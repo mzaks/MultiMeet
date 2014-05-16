@@ -26,6 +26,7 @@
 		10D02323192621DD00DE66D1 /* default_profile_picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D02322192621DD00DE66D1 /* default_profile_picture@2x.png */; };
 		1F09355419261222001666BF /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F09355319261222001666BF /* Group.m */; };
 		1F093557192612EC001666BF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F093556192612EC001666BF /* User.m */; };
+		1F1FE82419262D1A0074BABD /* FoodDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FE82319262D1A0074BABD /* FoodDataSource.m */; };
 		638F0438FD5D9779D2E73559 /* Advertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 638F0FAE3D7CD7E640E1DC40 /* Advertiser.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		1F09355319261222001666BF /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		1F093555192612EC001666BF /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		1F093556192612EC001666BF /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		1F1FE82219262D1A0074BABD /* FoodDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDataSource.h; sourceTree = "<group>"; };
+		1F1FE82319262D1A0074BABD /* FoodDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDataSource.m; sourceTree = "<group>"; };
 		638F0745BB13C96E5E849D00 /* Advertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Advertiser.h; sourceTree = "<group>"; };
 		638F0FAE3D7CD7E640E1DC40 /* Advertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Advertiser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +148,8 @@
 				1F09355319261222001666BF /* Group.m */,
 				1F093555192612EC001666BF /* User.h */,
 				1F093556192612EC001666BF /* User.m */,
+				1F1FE82219262D1A0074BABD /* FoodDataSource.h */,
+				1F1FE82319262D1A0074BABD /* FoodDataSource.m */,
 			);
 			path = MultiMeet;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				0BAB394219260A1700E1D5CB /* ViewController.m in Sources */,
 				1F093557192612EC001666BF /* User.m in Sources */,
 				1F09355419261222001666BF /* Group.m in Sources */,
+				1F1FE82419262D1A0074BABD /* FoodDataSource.m in Sources */,
 				0BAB393C19260A1700E1D5CB /* AppDelegate.m in Sources */,
 				0BAB393819260A1700E1D5CB /* main.m in Sources */,
 				638F0438FD5D9779D2E73559 /* Advertiser.m in Sources */,

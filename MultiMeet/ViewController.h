@@ -14,4 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *userPicture;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 
+@property (weak, nonatomic) IBOutlet UILabel *connectedCountLabel;
+@property (weak, nonatomic) IBOutlet UITableView *foodChoiceTableView;
+
 @end

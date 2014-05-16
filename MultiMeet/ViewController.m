@@ -11,18 +11,25 @@
 #import <Social/Social.h>
 
 #import "ViewController.h"
+#import "FoodDataSource.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+  FoodDataSource* _foodDataSource;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     [self accessTwitterAccount];
+  
+  _foodDataSource = [[FoodDataSource alloc] initWithTableView:self.foodChoiceTableView];
+  
+  
 }
 
 - (void)didReceiveMemoryWarning

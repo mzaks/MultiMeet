@@ -4,5 +4,7 @@
 
 
 @interface Advertiser : NSObject <MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate, MCSessionDelegate>
++ (id) sharedAdvertiser;
+
 - (void)startAdvertising:(NSString *)foodChoice;
 @end
