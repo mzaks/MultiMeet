@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BAB392C19260A1700E1D5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB392B19260A1700E1D5CB /* Foundation.framework */; };
+		0BAB392E19260A1700E1D5CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB392D19260A1700E1D5CB /* CoreGraphics.framework */; };
+		0BAB393019260A1700E1D5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB392F19260A1700E1D5CB /* UIKit.framework */; };
+		0BAB393619260A1700E1D5CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BAB393419260A1700E1D5CB /* InfoPlist.strings */; };
+		0BAB393819260A1700E1D5CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB393719260A1700E1D5CB /* main.m */; };
+		0BAB393C19260A1700E1D5CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB393B19260A1700E1D5CB /* AppDelegate.m */; };
+		0BAB393F19260A1700E1D5CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BAB393D19260A1700E1D5CB /* Main.storyboard */; };
+		0BAB394219260A1700E1D5CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB394119260A1700E1D5CB /* ViewController.m */; };
+		0BAB394419260A1700E1D5CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BAB394319260A1700E1D5CB /* Images.xcassets */; };
+		0BAB394B19260A1700E1D5CB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB394A19260A1700E1D5CB /* XCTest.framework */; };
+		0BAB394C19260A1700E1D5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB392B19260A1700E1D5CB /* Foundation.framework */; };
+		0BAB394D19260A1700E1D5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB392F19260A1700E1D5CB /* UIKit.framework */; };
+		0BAB395519260A1700E1D5CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BAB395319260A1700E1D5CB /* InfoPlist.strings */; };
+		0BAB395719260A1700E1D5CB /* MultiMeetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB395619260A1700E1D5CB /* MultiMeetTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BAB394E19260A1700E1D5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BAB392019260A1700E1D5CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BAB392719260A1700E1D5CB;
+			remoteInfo = MultiMeet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BAB392819260A1700E1D5CB /* MultiMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BAB392B19260A1700E1D5CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BAB392D19260A1700E1D5CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0BAB392F19260A1700E1D5CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0BAB393319260A1700E1D5CB /* MultiMeet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiMeet-Info.plist"; sourceTree = "<group>"; };
+		0BAB393519260A1700E1D5CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BAB393719260A1700E1D5CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BAB393919260A1700E1D5CB /* MultiMeet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiMeet-Prefix.pch"; sourceTree = "<group>"; };
+		0BAB393A19260A1700E1D5CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0BAB393B19260A1700E1D5CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0BAB393E19260A1700E1D5CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BAB394019260A1700E1D5CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0BAB394119260A1700E1D5CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0BAB394319260A1700E1D5CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0BAB394919260A1700E1D5CB /* MultiMeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiMeetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BAB394A19260A1700E1D5CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0BAB395219260A1700E1D5CB /* MultiMeetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiMeetTests-Info.plist"; sourceTree = "<group>"; };
+		0BAB395419260A1700E1D5CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BAB395619260A1700E1D5CB /* MultiMeetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiMeetTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BAB392519260A1700E1D5CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAB392E19260A1700E1D5CB /* CoreGraphics.framework in Frameworks */,
+				0BAB393019260A1700E1D5CB /* UIKit.framework in Frameworks */,
+				0BAB392C19260A1700E1D5CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BAB394619260A1700E1D5CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAB394B19260A1700E1D5CB /* XCTest.framework in Frameworks */,
+				0BAB394D19260A1700E1D5CB /* UIKit.framework in Frameworks */,
+				0BAB394C19260A1700E1D5CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BAB391F19260A1700E1D5CB = {
+			isa = PBXGroup;
+			children = (
+				0BAB393119260A1700E1D5CB /* MultiMeet */,
+				0BAB395019260A1700E1D5CB /* MultiMeetTests */,
+				0BAB392A19260A1700E1D5CB /* Frameworks */,
+				0BAB392919260A1700E1D5CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BAB392919260A1700E1D5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BAB392819260A1700E1D5CB /* MultiMeet.app */,
+				0BAB394919260A1700E1D5CB /* MultiMeetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BAB392A19260A1700E1D5CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BAB392B19260A1700E1D5CB /* Foundation.framework */,
+				0BAB392D19260A1700E1D5CB /* CoreGraphics.framework */,
+				0BAB392F19260A1700E1D5CB /* UIKit.framework */,
+				0BAB394A19260A1700E1D5CB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BAB393119260A1700E1D5CB /* MultiMeet */ = {
+			isa = PBXGroup;
+			children = (
+				0BAB393A19260A1700E1D5CB /* AppDelegate.h */,
+				0BAB393B19260A1700E1D5CB /* AppDelegate.m */,
+				0BAB393D19260A1700E1D5CB /* Main.storyboard */,
+				0BAB394019260A1700E1D5CB /* ViewController.h */,
+				0BAB394119260A1700E1D5CB /* ViewController.m */,
+				0BAB394319260A1700E1D5CB /* Images.xcassets */,
+				0BAB393219260A1700E1D5CB /* Supporting Files */,
+			);
+			path = MultiMeet;
+			sourceTree = "<group>";
+		};
+		0BAB393219260A1700E1D5CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BAB393319260A1700E1D5CB /* MultiMeet-Info.plist */,
+				0BAB393419260A1700E1D5CB /* InfoPlist.strings */,
+				0BAB393719260A1700E1D5CB /* main.m */,
+				0BAB393919260A1700E1D5CB /* MultiMeet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BAB395019260A1700E1D5CB /* MultiMeetTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BAB395619260A1700E1D5CB /* MultiMeetTests.m */,
+				0BAB395119260A1700E1D5CB /* Supporting Files */,
+			);
+			path = MultiMeetTests;
+			sourceTree = "<group>";
+		};
+		0BAB395119260A1700E1D5CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BAB395219260A1700E1D5CB /* MultiMeetTests-Info.plist */,
+				0BAB395319260A1700E1D5CB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BAB392719260A1700E1D5CB /* MultiMeet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BAB395A19260A1700E1D5CB /* Build configuration list for PBXNativeTarget "MultiMeet" */;
+			buildPhases = (
+				0BAB392419260A1700E1D5CB /* Sources */,
+				0BAB392519260A1700E1D5CB /* Frameworks */,
+				0BAB392619260A1700E1D5CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiMeet;
+			productName = MultiMeet;
+			productReference = 0BAB392819260A1700E1D5CB /* MultiMeet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BAB394819260A1700E1D5CB /* MultiMeetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BAB395D19260A1700E1D5CB /* Build configuration list for PBXNativeTarget "MultiMeetTests" */;
+			buildPhases = (
+				0BAB394519260A1700E1D5CB /* Sources */,
+				0BAB394619260A1700E1D5CB /* Frameworks */,
+				0BAB394719260A1700E1D5CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BAB394F19260A1700E1D5CB /* PBXTargetDependency */,
+			);
+			name = MultiMeetTests;
+			productName = MultiMeetTests;
+			productReference = 0BAB394919260A1700E1D5CB /* MultiMeetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BAB392019260A1700E1D5CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MultiThink;
+				TargetAttributes = {
+					0BAB394819260A1700E1D5CB = {
+						TestTargetID = 0BAB392719260A1700E1D5CB;
+					};
+				};
+			};
+			buildConfigurationList = 0BAB392319260A1700E1D5CB /* Build configuration list for PBXProject "MultiMeet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BAB391F19260A1700E1D5CB;
+			productRefGroup = 0BAB392919260A1700E1D5CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BAB392719260A1700E1D5CB /* MultiMeet */,
+				0BAB394819260A1700E1D5CB /* MultiMeetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BAB392619260A1700E1D5CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAB394419260A1700E1D5CB /* Images.xcassets in Resources */,
+				0BAB393619260A1700E1D5CB /* InfoPlist.strings in Resources */,
+				0BAB393F19260A1700E1D5CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BAB394719260A1700E1D5CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAB395519260A1700E1D5CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BAB392419260A1700E1D5CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAB394219260A1700E1D5CB /* ViewController.m in Sources */,
+				0BAB393C19260A1700E1D5CB /* AppDelegate.m in Sources */,
+				0BAB393819260A1700E1D5CB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BAB394519260A1700E1D5CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAB395719260A1700E1D5CB /* MultiMeetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BAB394F19260A1700E1D5CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BAB392719260A1700E1D5CB /* MultiMeet */;
+			targetProxy = 0BAB394E19260A1700E1D5CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BAB393419260A1700E1D5CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BAB393519260A1700E1D5CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0BAB393D19260A1700E1D5CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BAB393E19260A1700E1D5CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0BAB395319260A1700E1D5CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BAB395419260A1700E1D5CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BAB395819260A1700E1D5CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0BAB395919260A1700E1D5CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BAB395B19260A1700E1D5CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiMeet/MultiMeet-Prefix.pch";
+				INFOPLIST_FILE = "MultiMeet/MultiMeet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0BAB395C19260A1700E1D5CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiMeet/MultiMeet-Prefix.pch";
+				INFOPLIST_FILE = "MultiMeet/MultiMeet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0BAB395E19260A1700E1D5CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiMeet.app/MultiMeet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiMeet/MultiMeet-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MultiMeetTests/MultiMeetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0BAB395F19260A1700E1D5CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiMeet.app/MultiMeet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiMeet/MultiMeet-Prefix.pch";
+				INFOPLIST_FILE = "MultiMeetTests/MultiMeetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BAB392319260A1700E1D5CB /* Build configuration list for PBXProject "MultiMeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BAB395819260A1700E1D5CB /* Debug */,
+				0BAB395919260A1700E1D5CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BAB395A19260A1700E1D5CB /* Build configuration list for PBXNativeTarget "MultiMeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BAB395B19260A1700E1D5CB /* Debug */,
+				0BAB395C19260A1700E1D5CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BAB395D19260A1700E1D5CB /* Build configuration list for PBXNativeTarget "MultiMeetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BAB395E19260A1700E1D5CB /* Debug */,
+				0BAB395F19260A1700E1D5CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BAB392019260A1700E1D5CB /* Project object */;
+}
