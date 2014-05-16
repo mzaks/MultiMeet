@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *userPicture;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
+
 @end
