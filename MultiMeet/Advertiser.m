@@ -20,6 +20,7 @@
 }
 
 -(void)startAdvertising:(NSString *)foodChoice{
+    [_session disconnect];
     _foodChoice = foodChoice;
     _localPeerID = [[MCPeerID alloc] initWithDisplayName:[UIDevice currentDevice].name];
     _session = [[MCSession alloc] initWithPeer:_localPeerID
